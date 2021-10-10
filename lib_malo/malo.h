@@ -57,9 +57,6 @@
    /*l'acceil, le menu*/
   #include "menu.c"
 
-   /*audio : bruittages génériques, musiques, et autre*/
-  #include "musiques.c"
-
    /*différentes structures globales à tous programe*/
   #include "struct.c"
 
