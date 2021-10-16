@@ -53,7 +53,11 @@ class Camera
 
     void go_on ();
 
+    void go_on_h ();
+
     void go_back ();
+
+    void go_back_h ();
 
     void go_right ();
 

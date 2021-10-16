@@ -144,10 +144,24 @@ void Camera::go_on () {
 }
 
 
+void Camera::go_on_h () {
+   m_position.x += m_orientation.x * m_vitesse;
+   m_position.y += m_orientation.y * m_vitesse;
+   m_pointCible = m_position + m_orientation;
+}
+
+
 void Camera::go_back () {
    m_position = m_position - m_orientation * m_vitesse;
    m_pointCible = m_position + m_orientation;
 }
+
+void Camera::go_back_h () {
+   m_position.x -= m_orientation.x * m_vitesse;
+   m_position.y -= m_orientation.y * m_vitesse;
+   m_pointCible = m_position + m_orientation;
+}
+
 
 void Camera::go_left () {
    m_position = m_position + m_deplacementLateral * m_vitesse;

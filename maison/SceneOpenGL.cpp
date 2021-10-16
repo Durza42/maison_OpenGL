@@ -224,6 +224,7 @@ bool SceneOpenGL::do_events (Camera* camera, Sol herbe, Sol espace) {
       for (size_t i = 0 ; i < 24 && !stop ; i += 3) {
          if (!herbe.est_au_dessus(glm::vec3 (cube [i], cube [i + 1], cube [i + 2])) || !espace.est_au_dessous(glm::vec3 (cube [i], cube [i + 1], cube [i + 2]))) {
             camera -> go_back ();
+            camera -> go_on_h ();
             stop = true;
          }
       }
@@ -240,6 +241,7 @@ bool SceneOpenGL::do_events (Camera* camera, Sol herbe, Sol espace) {
       for (size_t i = 0 ; i < 24 && !stop ; i += 3) {
          if (!herbe.est_au_dessus(glm::vec3 (cube [i], cube [i + 1], cube [i + 2])) || !espace.est_au_dessous(glm::vec3 (cube [i], cube [i + 1], cube [i + 2]))) {
             camera -> go_on ();
+            camera -> go_back_h ();
             stop = true;
          }
       }
