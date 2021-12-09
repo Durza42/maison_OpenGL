@@ -1,3 +1,10 @@
+# replace the -I... option by your include directory
+# and the -L option by your libs directory
+
+## For Windows users : same; but replace also the commands
+## "x86_64-w64-mingw32-gcc" by "gcc"
+## and "x86_64-w64-mingw32-g++" by "g++"
+
 x86_64-w64-mingw32-gcc -c glad.c -o glad.o -I/home/durza42/programing/includes/
 x86_64-w64-mingw32-g++ -c main.cpp -o main.o -I/home/durza42/programing/includes/
 x86_64-w64-mingw32-g++ -c SceneOpenGL.cpp -o SceneOpenGL.o -I/home/durza42/programing/includes/
